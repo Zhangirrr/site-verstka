@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'intro';
+    src: url(../../fonts/IntroRegular.woff);
+}
+@font-face {
+    font-family: 'boldone';
+    src: url(../../fonts/RalewayBold.woff);
+}
+@font-face {
+    font-family: 'extra';
+    src: url(../../fonts/RalewayExtraBold.woff);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(../../fonts/RalewayRegular.woff);
+}
+
+body {
+    margin: 0px;
+}
+.container {
+    display: grid;
+    gap: 15px;
+}
+main {
+    display: grid;
+    gap: 15px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../../images/0-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    z-index: 1;
+}
+
+header section {
+    display: grid;
+    background-color: rgba(41, 58, 67, 0.92);
+    height: 100vh;
+    align-content: center;
+    gap: 20px;  
+    justify-items: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    font-family: boldone;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f0650d;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+    text-transform: capitalize;
+    border: none;
+}
+.header-buttons {
+    /* display: ; */
+    gap: 50px;
+}
+.button:hover {
+    background-color: #fa9657;
+}
+.button-gray:hover {
+background-color: silver;
+}
+
+
+.button-gray {
+    background-color: #354a56;
+}
+.view-portfolio {
+    color: #fff;
+    font-family: boldone;
+    text-decoration: none;
+    background-color: #f0650d;
+    padding: 10px 45px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    text-transform: capitalize;
+}
+
+header h1 {
+    font-family: intro;
+    margin: 0;
+    font-size: 50px;    
+    color: white;
+    text-transform: uppercase;
+}
+
+.grid-item:nth-child(1) {
+    background-image:url(../../images/1.jpg);
+    grid-column: 1/3;
+}
+.grid-item:nth-child(2) {
+    background-image:url(../../images/2.jpg);
+}
+.grid-item:nth-child(3) {
+    background-image:url(../../images/3.jpg);
+}
+.grid-item:nth-child(4) {
+    background-image:url(../../images/4.jpg);
+}
+.grid-item:nth-child(5) {
+    background-image:url(../../images/5.jpg);
+    grid-column: 2/4;
+}
+.grid-item:nth-child(6) {
+    grid-column: 4;
+    grid-row: 2 / 4;
+    background-image:url(../../images/6.jpg);
+    
+}
+.grid-item:nth-child(7) {
+    background-image:url(../../images/7.jpg);
+
+}
+.grid-item:nth-child(8) {
+    background-image:url(../../images/8.jpg);
+}
+.grid-item:nth-child(9) {
+    background-image:url(../../images/9.jpg);
+}
+
+.grid-section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-item {
+    text-align: center;
+    min-height: 32vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    font-size: 17px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;   
+    position: relative; 
+}
+.grid {
+    display: grid;   
+}
+.grid-item div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 58, 67, 0.6);
+}
+.grid-item:hover div {
+    background-color: rgba(41, 58, 67, 0.97);
+    position: absolute;
+    transition: 1s;
+}
+.grid-item:hover span {
+    color:#f0650d;
+    position: absolute;
+    transition: 1s;
+}
+.grid-item span {
+    z-index: 1;
+}
+main .ready {
+    background-color: #ededed;
+}
+main .landing {
+    padding: 80px 0;    
+}
+main .landing h2 {
+    font-family: extra;
+    font-size: 30px;
+    font-weight: 800;
+    color: #293a43;
+    line-height: 1.2;
+}
+main .ready .container {
+    grid-template-columns: 1fr 1fr;
+}
+main .container {
+    width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.text {
+    border-right: 1px solid gainsboro;
+    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 60px;
+}
+.text h2 {
+    /* font-family: extra; */
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.right {
+    padding-left: 40px;
+}
+.field {
+    padding: 30px 0;
+    background-color: rgba(41, 58, 67, 0.92);
+}
+.field input {
+    background-color: #354a56;
+}
+.field form {
+    display: grid;
+    align-items: center;
+    gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttonready {
+    font-family: extra;
+    color: #fff;
+    width: 100%;
+    background-color: #f0650d;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+}
+input,
+textarea {
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    outline: 0;
+    transition: 0.25s ease;
+}
+input:focus,
+textarea:focus {
+    background-color: #ededed;
+}
+
+.end-grid {
+    /* margin: 15px; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    align-content: center;
+    /* font-size: 10px; */
+}
+.block {
+    background-color: #ededed;
+    overflow: hidden;
+}
+.block:hover {
+    background-color: gainsboro;
+}
+
+.block p {
+    margin: 30px;
+    font-family: regular;
+}
+.block h4 {
+    margin: 17px;
+    font-family: boldone;
+    color: gray;
+    font-size: 14px;
+}
+
+.block:nth-child(3) {
+    grid-column: 3/5;
+}
+.block:nth-child(4) {
+    grid-column: 1/3;
+}
+main .zag {
+    font-family: extra;
+    color: #293a43;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.end-grid img {
+    display: block;
+    height: 32vh;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s ease;
+}
+/* .end-grid:hover h4 {
+    background-color: #ededed;
+} */
+
+.end-grid img:hover {
+    transform: scale(1.05) translateY(-8.5px);
+}
+.but {
+    display: grid;
+    justify-items: center;
+    font-family: extra;
+}
+footer h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 19px;
+}
+footer {
+    display: grid;
+    align-items: center;
+    background-color: #293a43;
+    height: 20vh;
+    color: gray;
+    font-family: extra;
+
+}
+footer p {
+    text-align: center;
+    /* font-size: ; */
+}
+footer span {
+    font-size: 24px;
+    /* font-family: extra; */
+    color: lightgray;
+}
+
+main span {
+    font-family: extra;
+}
